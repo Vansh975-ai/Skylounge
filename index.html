@@ -3,444 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skylounge Rooftop Café</title>
+    <title>SkyLounge Café | Rooftop Continental Dining</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
-    <header id="home">
-        <div class="logo">
-            <a href="#home">SKYLOUNGE</a>
-        </div>
-        
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <nav id="nav">
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#order">Order Online</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="header-content">
-            <h1>Welcome to Skylounge</h1>
-            <p>Experience exquisite continental cuisine with a breathtaking view</p>
-            <div class="header-buttons">
-                <a href="#menu" class="btn">View Menu</a>
-                <a href="#contact" class="btn btn-secondary">Make Reservation</a>
-            </div>
+    <header id="header">
+        <div class="container flex justify-between items-center">
+            <div class="logo">Sky<span>Lounge</span></div>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
     </header>
-    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Experience Rooftop Elegance</h1>
+            <p>Savor continental cuisine with breathtaking views in our ambient skylounge setting</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="section" id="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Perched high above the bustling city, Skylounge offers a unique dining experience that combines gourmet continental cuisine with breathtaking panoramic views.</p>
-                    <p>Our rooftop setting provides the perfect ambient environment for any occasion, from intimate dinners to social gatherings. With spacious seating and attentive service, we ensure every visit is memorable.</p>
-                    <p>At Skylounge, we pride ourselves on offering premium quality continental dishes at reasonable prices, making exceptional dining experiences accessible to all our guests.</p>
+            <div class="section-title">
+                <h2>About SkyLounge</h2>
+                <p>Where culinary excellence meets breathtaking views</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-img">
+                        <img src="https://source.unsplash.com/random/600x400/?rooftop-restaurant" alt="Rooftop Ambience">
+                    </div>
+                    <div class="about-content">
+                        <h3>Ambient Environment</h3>
+                        <p>Our rooftop setting offers panoramic views of the cityscape, creating the perfect backdrop for an unforgettable dining experience. With thoughtfully designed spaces that blend comfort with sophistication, every moment at SkyLounge is one to remember.</p>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <!-- This would be replaced with actual cafe image -->
-                    <img src="/api/placeholder/600/400" alt="Skylounge Rooftop Setting">
+                <div class="about-card">
+                    <div class="about-img">
+                        <img src="https://source.unsplash.com/random/600x400/?restaurant-seating" alt="Seating Area">
+                    </div>
+                    <div class="about-content">
+                        <h3>Great Seating Capacity</h3>
+                        <p>Whether you're planning an intimate dinner for two or a celebration with friends, our versatile seating arrangements can accommodate your needs. From cozy corners to communal tables, every seat offers the perfect vantage point.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-img">
+                        <img src="https://source.unsplash.com/random/600x400/?continental-food" alt="Continental Food">
+                    </div>
+                    <div class="about-content">
+                        <h3>Continental Cuisine</h3>
+                        <p>Our menu features a delightful selection of continental dishes crafted with premium ingredients and innovative techniques. From classical favorites to contemporary creations, our culinary team ensures every plate is a masterpiece at reasonable prices.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Menu Section -->
-    <section id="menu" class="menu">
+    <section class="section" id="menu">
         <div class="container">
             <div class="section-title">
                 <h2>Our Menu</h2>
-                <p>Explore our exquisite continental delicacies</p>
+                <p>Exquisite continental delicacies at reasonable prices</p>
             </div>
-            
-            <div class="menu-categories">
-                <span class="menu-category active" data-category="appetizers">Appetizers</span>
-                <span class="menu-category" data-category="main-course">Main Course</span>
-                <span class="menu-category" data-category="desserts">Desserts</span>
-                <span class="menu-category" data-category="beverages">Beverages</span>
-            </div>
-            
-            <div class="menu-grid active" id="appetizers">
+            <div class="menu-container">
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Bruschetta">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?pasta" alt="Classic Carbonara">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Classic Bruschetta</h3>
-                        <div class="price">₹220</div>
-                        <p>Toasted bread topped with fresh tomatoes, basil, and garlic</p>
+                    <div class="menu-content">
+                        <h3>Classic Carbonara</h3>
+                        <p>Al dente spaghetti with creamy egg sauce, crispy pancetta, freshly ground black pepper and parmesan</p>
+                        <div class="menu-price">₹320</div>
                     </div>
                 </div>
-                
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Mushroom Crostini">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?steak" alt="Herb-Crusted Steak">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Mushroom Crostini</h3>
-                        <div class="price">₹250</div>
-                        <p>Sautéed wild mushrooms with herbs on toasted baguette</p>
+                    <div class="menu-content">
+                        <h3>Herb-Crusted Steak</h3>
+                        <p>Tender beef medallions with aromatic herb crust, served with truffle mashed potatoes and red wine jus</p>
+                        <div class="menu-price">₹550</div>
                     </div>
                 </div>
-                
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Caprese Salad">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?risotto" alt="Wild Mushroom Risotto">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Caprese Salad</h3>
-                        <div class="price">₹280</div>
-                        <p>Fresh mozzarella, tomatoes, and basil with balsamic reduction</p>
+                    <div class="menu-content">
+                        <h3>Wild Mushroom Risotto</h3>
+                        <p>Arborio rice slowly cooked with assorted wild mushrooms, white wine, parmesan, and fresh herbs</p>
+                        <div class="menu-price">₹390</div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="menu-grid" id="main-course">
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Penne Arrabbiata">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?salad" alt="Mediterranean Salad">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Penne Arrabbiata</h3>
-                        <div class="price">₹350</div>
-                        <p>Penne pasta in spicy tomato sauce with garlic and herbs</p>
+                    <div class="menu-content">
+                        <h3>Mediterranean Salad</h3>
+                        <p>Fresh mixed greens with cherry tomatoes, cucumber, olives, feta cheese and zesty lemon dressing</p>
+                        <div class="menu-price">₹250</div>
                     </div>
                 </div>
-                
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Grilled Salmon">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?fish" alt="Lemon Butter Grilled Fish">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Grilled Salmon</h3>
-                        <div class="price">₹550</div>
-                        <p>Fresh salmon fillet with lemon butter sauce and roasted vegetables</p>
+                    <div class="menu-content">
+                        <h3>Lemon Butter Grilled Fish</h3>
+                        <p>Fresh catch of the day grilled to perfection, served with lemon butter sauce and seasonal vegetables</p>
+                        <div class="menu-price">₹450</div>
                     </div>
                 </div>
-                
                 <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Chicken Marsala">
+                    <div class="menu-img">
+                        <img src="https://source.unsplash.com/random/600x400/?dessert" alt="Chocolate Fondant">
                     </div>
-                    <div class="menu-item-content">
-                        <h3>Chicken Marsala</h3>
-                        <div class="price">₹450</div>
-                        <p>Chicken breast in rich Marsala wine sauce with mushrooms</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="menu-grid" id="desserts">
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Tiramisu">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Classic Tiramisu</h3>
-                        <div class="price">₹270</div>
-                        <p>Coffee-soaked ladyfingers with mascarpone cream</p>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Chocolate Lava Cake">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Chocolate Lava Cake</h3>
-                        <div class="price">₹320</div>
-                        <p>Warm chocolate cake with molten center, served with vanilla ice cream</p>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Crème Brûlée">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Crème Brûlée</h3>
-                        <div class="price">₹290</div>
-                        <p>Vanilla custard with caramelized sugar top</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="menu-grid" id="beverages">
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Signature Cocktail">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Skylounge Signature</h3>
-                        <div class="price">₹380</div>
-                        <p>Our premium cocktail with exotic fruits and premium spirits</p>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Italian Coffee">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Italian Coffee</h3>
-                        <div class="price">₹220</div>
-                        <p>Premium coffee with amaretto liqueur and whipped cream</p>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="/api/placeholder/400/300" alt="Fresh Juice">
-                    </div>
-                    <div class="menu-item-content">
-                        <h3>Fresh Fruit Smoothie</h3>
-                        <div class="price">₹190</div>
-                        <p>Blend of seasonal fruits with yogurt and honey</p>
+                    <div class="menu-content">
+                        <h3>Chocolate Fondant</h3>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries</p>
+                        <div class="menu-price">₹280</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <section class="section gallery" id="gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Gallery</h2>
-                <p>Experience the Skylounge ambiance</p>
+                <h2>Our Gallery</h2>
+                <p>Glimpses of our sophisticated space and culinary artistry</p>
             </div>
-            
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Skylounge Interior">
+                    <img src="https://source.unsplash.com/random/600x600/?rooftop-cafe" alt="Rooftop View">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Rooftop View">
+                    <img src="https://source.unsplash.com/random/600x600/?cocktail" alt="Signature Cocktail">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Signature Dish">
+                    <img src="https://source.unsplash.com/random/600x600/?plated-food" alt="Gourmet Dish">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Dining Area">
+                    <img src="https://source.unsplash.com/random/600x600/?restaurant-interior" alt="Interior Design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Evening Ambiance">
+                    <img src="https://source.unsplash.com/random/600x600/?chef-cooking" alt="Chef in Action">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/400" alt="Cocktail Selection">
+                    <img src="https://source.unsplash.com/random/600x600/?dessert-plate" alt="Dessert Creation">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Order Online Section -->
-    <section id="order" class="order-online">
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Order Online</h2>
-                <p>Enjoy our delicious food in the comfort of your home</p>
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
             </div>
-            
-            <div class="order-options">
-                <div class="order-option">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Call Us</h3>
-                    <p>Place your order directly by calling us</p>
-                    <a href="tel:9897682971" class="btn">9897682971</a>
-                </div>
-                
-                <div class="order-option">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Food Delivery</h3>
-                    <p>Order through your favorite food delivery app</p>
-                    <div class="delivery-apps">
-                        <a href="#" class="delivery-app">
-                            <img src="/api/placeholder/100/40" alt="Delivery App 1">
-                        </a>
-                        <a href="#" class="delivery-app">
-                            <img src="/api/placeholder/100/40" alt="Delivery App 2">
-                        </a>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Rooftop, Skyview Building, City Center</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
+                            <a href="tel:+919897682971">+91 989 768 2971</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <a href="mailto:rajputvanah21@gmail.com">rajputvanah21@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Opening Hours</h4>
+                            <p>Monday to Sunday: 11:00 AM - 11:00 PM</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="order-option">
-                    <i class="fas fa-shopping-bag"></i>
-                    <h3>Order Form</h3>
-                    <p>Fill out our quick order form below</p>
-                    <a href="#order-form" class="btn">Order Now</a>
-                </div>
-            </div>
-            
-            <div id="order-form" class="order-form">
-                <form>
+                <form id="contact-form">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address" required>
+                        <input type="tel" class="form-control" placeholder="Your Phone">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Order" rows="4" required></textarea>
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Delivery Address" required>
-                    </div>
-                    <button type="submit" class="btn">Submit Order</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>We'd love to hear from you. Reach out for reservations, inquiries, or feedback.</p>
-                    
-                    <div class="contact-details">
-                        <div class="detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Phone</h3>
-                                <p><a href="tel:9897682971">9897682971</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p><a href="mailto:rajputvanah21@gmail.com">rajputvanah21@gmail.com</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Address</h3>
-                                <p>Skylounge Building, 5th Floor Rooftop<br>Main City Center, City, State, 110001</p>
-                            </div>
-                        </div>
-                        
-                        <div class="detail">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h3>Hours</h3>
-                                <p>Monday - Sunday: 11:00 AM - 11:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h2>Reservation</h2>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone Number" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <input type="date" class="form-control" required>
-                            </div>
-                            <div class="form-group half">
-                                <input type="time" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" placeholder="Number of Guests" min="1" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Special Requests" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Book Table</button>
-                    </form>
+            
+            <!-- Online Order Section -->
+            <div class="online-order">
+                <h3>Order Online</h3>
+                <p>Enjoy our delicious continental cuisine in the comfort of your home</p>
+                <div class="order-buttons">
+                    <a href="tel:+919897682971" class="order-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/919897682971" class="order-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:rajputvanah21@gmail.com" class="order-btn">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Map Section -->
-    <section class="map">
-        <!-- This would be replaced with an actual map -->
-        <div class="map-placeholder">
-            <img src="/api/placeholder/1200/400" alt="Map">
-        </div>
-    </section>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Skylounge</h3>
-                    <p>Experience the perfect blend of continental cuisine and panoramic views at our premium rooftop café.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#order">Order Online</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Phone: <a href="tel:9897682971">9897682971</a></p>
-                    <p>Email: <a href="mailto:rajputvanah21@gmail.com">rajputvanah21@gmail.com</a></p>
-                    <p>Address: Skylounge Building, 5th Floor Rooftop, Main City Center</p>
-                </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Skylounge Rooftop Café. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tripadvisor"></i></a>
             </div>
+            <p class="copyright">&copy; 2025 SkyLounge Café. All rights reserved.</p>
         </div>
     </footer>
-    
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
